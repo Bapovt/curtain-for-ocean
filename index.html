@@ -67,6 +67,8 @@ nav a:hover {
   opacity: 0;
   transform: translateY(40px);
   transition: all 1.5s ease;
+
+  position: relative;
 }
 
 .section.show {
@@ -77,7 +79,7 @@ nav a:hover {
 .s1 {
   background:
     linear-gradient(rgba(11,29,42,0.5), rgba(11,29,42,0.7)),
-    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
+    url('https://images.openai.com/static-rsc-4/ODwA1_rejsNRF6xi8iOwlNOoFmGlT9fFsMLUoMmc1GE8QxmLAO5_FvlU1cGbMHXBpEWrmjGlQ_e4UiDLloKo2YhkvZMj9bnJiOWeWeMGZHJ4WPsWjpAvZKpSFcTgG_zy7Eor0IKp-eKIBJWKutJTNUvXNgQpMsxHBqND5XiLL5zg0TGiFvjj_sLnVs7fNmsr?purpose=fullsize') no-repeat center/cover;
 }
 
 .s2 {
@@ -89,32 +91,25 @@ nav a:hover {
 .s3 {
   background:
     linear-gradient(rgba(11,29,42,0.5), rgba(11,29,42,0.7)),
-    url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429') no-repeat center/cover;
+    url('https://images.openai.com/static-rsc-4/Ua5OJiFr2Rw4ks7MieP_yYRIJV566cDb_m0j-PbQ7go6fCOJiTkTE6BeuheOMz1Z4YVGteR63kz3gXXxFzh7tqHt3nmxq5ygdmi69YOgG2ar4O2zYe5VemTyQPPC-u-RtU2YyHUb5OGl_gNNmK3ayAwp3Q1IQf_ZhtAkx_tu_hzQj2Vm-0CP5lElSSuM8OwR?purpose=fullsize') no-repeat center/cover;
 }
 </style>
 </head>
 
 <body>
 
-<header>
-  <div class="logo">Curtain for Ocean</div>
-  <nav>
-    <a href="#s1">Home</a>
-    <a href="#s2">About</a>
-    <a href="#s3">Collection</a>
-  </nav>
-</header>
-
 <div class="section s1" id="s1">
-  Flow in Silence
+  <div>Flow in Silence</div>
+  <a href="#s2" class="next">↓</a>
 </div>
 
 <div class="section s2" id="s2">
-  Where Stillness Shines
+  <div>Where Stillness Shines</div>
+  <a href="#s3" class="next">↓</a>
 </div>
 
 <div class="section s3" id="s3">
-  Silence, Perfected
+  <div>Silence, Perfected</div>
 </div>
 
 <script>
