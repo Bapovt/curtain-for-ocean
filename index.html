@@ -2,7 +2,6 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
-
 <title>Curtain for Ocean</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;500&display=swap" rel="stylesheet">
@@ -22,11 +21,35 @@ body {
 
 header {
   position: fixed;
-  top: 30px;
-  left: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(6px);
+}
+
+.logo {
   font-size: 18px;
   letter-spacing: 3px;
-  z-index: 100;
+}
+
+nav a {
+  margin-left: 30px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+  transition: opacity 0.3s;
+}
+
+nav a:hover {
+  opacity: 0.6;
 }
 
 .section {
@@ -37,7 +60,7 @@ header {
   padding-left: 100px;
   text-align: left;
 
-  font-size: 60px;
+  font-size: 55px;
   font-weight: 300;
   letter-spacing: 5px;
 
@@ -54,36 +77,43 @@ header {
 .s1 {
   background:
     linear-gradient(rgba(11,29,42,0.5), rgba(11,29,42,0.7)),
-    url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21') no-repeat center/cover;
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center/cover;
 }
 
 .s2 {
   background:
     linear-gradient(rgba(11,29,42,0.5), rgba(11,29,42,0.7)),
-    url('https://images.openai.com/static-rsc-4/ODwA1_rejsNRF6xi8iOwlNOoFmGlT9fFsMLUoMmc1GE8QxmLAO5_FvlU1cGbMHXBpEWrmjGlQ_e4UiDLloKo2YhkvZMj9bnJiOWeWeMGZHJ4WPsWjpAvZKpSFcTgG_zy7Eor0IKp-eKIBJWKutJTNUvXNgQpMsxHBqND5XiLL5zg0TGiFvjj_sLnVs7fNmsr?purpose=fullsize') no-repeat center/cover;
+    url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21') no-repeat center/cover;
 }
 
 .s3 {
   background:
     linear-gradient(rgba(11,29,42,0.5), rgba(11,29,42,0.7)),
-    url('https://images.openai.com/static-rsc-4/gf-RJdV-n4vE0jNBDWl_v7QkY4w6Iv-D8nBoC9466ZhuELeHgCnf53nqhdI5ojjXYqlqgUJs-9wV0hjypFdSLSOEV3OSWBKPGEwf3iPa3rw6vGJSEMy1wnUFJuBXPu4jrJl2aW5Vokqc_gdfO_undfug19bg4fjVpqAPUMcueT31cUZ63T4CB5ajAeb6qDni?purpose=fullsize') no-repeat center/cover;
+    url('https://images.unsplash.com/photo-1500534314209-a25ddb2bd429') no-repeat center/cover;
 }
 </style>
 </head>
 
 <body>
-<div class="section s4"> <div> <h2>Jewelry</h2> <div class="item"> <img src="https://via.placeholder.com/200"> <p>Ocean Ring</p> <p>₩15,000</p> <button onclick="addCart('Ocean Ring')">장바구니</button> </div> <div class="item"> <img src="https://via.placeholder.com/200"> <p>Wave Necklace</p> <p>₩25,000</p> <button onclick="addCart('Wave Necklace')">장바구니</button> </div> </div> </div>
-<header>Curtain for Ocean</header>
 
-<div class="section s1">
+<header>
+  <div class="logo">Curtain for Ocean</div>
+  <nav>
+    <a href="#s1">Home</a>
+    <a href="#s2">About</a>
+    <a href="#s3">Collection</a>
+  </nav>
+</header>
+
+<div class="section s1" id="s1">
   Flow in Silence
 </div>
 
-<div class="section s2">
+<div class="section s2" id="s2">
   Where Stillness Shines
 </div>
 
-<div class="section s3">
+<div class="section s3" id="s3">
   Silence, Perfected
 </div>
 
@@ -105,5 +135,5 @@ sections.forEach(section => {
 });
 </script>
 
-<body>
+</body>
 </html>
